@@ -1,41 +1,33 @@
-# RAIL//RESOLVE — File-by-file VS Code project
+# RAIL//RESOLVE — Railway Passenger Grievance System
 
-AI-enhanced railway passenger grievance redressal system demo.
+An AI-enhanced railway passenger grievance redressal demo.
 
-## Files
-- `index.html` — page structure and links to the CSS and JavaScript files.
-- `style.css` — layout, colors, responsive design, and component styles.
-- `app.js` — demo login, complaint reporting/classification, dashboards, routing, and localStorage persistence.
-- `.gitignore` — excludes local/editor files and secrets.
+## Features
+- Passenger, staff, and admin dashboards
+- Complaint reporting and classification
+- Priority detection and department routing
+- Duplicate incident detection
+- Complaint status tracking and notifications
+- Analytics and grievance insights
 
-## Run in VS Code
-1. Extract this folder.
-2. Open VS Code → **File → Open Folder** → select `RAIL-RESOLVE-FILE-BY-FILE`.
-3. Install the **Live Server** extension if you do not already have it.
-4. Right-click `index.html` → **Open with Live Server**. You can also open `index.html` directly in a browser.
+## Project Files
+- `index.html` — webpage structure
+- `style.css` — styling and responsive layout
+- `app.js` — application logic and demo data
+- `.gitignore` — files excluded from Git
 
-## Demo login
-Password for the built-in demo accounts: `Demo@123`
-- `passenger@demo.com`
-- `staff@demo.com`
-- `admin@demo.com`
+## Run Locally
+1. Open the project folder in Visual Studio Code.
+2. Install the Live Server extension if needed.
+3. Right-click `index.html`.
+4. Select **Open with Live Server**.
 
-## GitHub upload using VS Code terminal
-Create an empty repository named `RAIL-RESOLVE` on GitHub (do not initialize it with another README), then run these commands in the VS Code terminal from this folder:
+## Demo Login
+Password: `Demo@123`
 
-```bash
-git init
-git add .
-git commit -m "Add RAIL RESOLVE application files"
-git branch -M main
-git remote add origin https://github.com/YOUR-USERNAME/RAIL-RESOLVE.git
-git push -u origin main
-```
+- Passenger: `passenger@demo.com`
+- Staff: `staff@demo.com`
+- Admin: `admin@demo.com`
 
-Replace `YOUR-USERNAME` with your GitHub username. If `git remote add origin` says the remote already exists, run `git remote -v` to inspect it instead of adding it again.
-
-## GitHub Pages
-Repository → **Settings → Pages** → deploy from branch `main`, folder `/(root)` → **Save**.
-
-## Important limitations
-This is a front-end demo. It uses browser localStorage and rule-based classification, not a real AI service, secure server-side authentication, or shared production database. Do not use real passenger personal data or passwords.
+## Limitations
+This is a front-end demonstration. It uses browser `localStorage` and rule-based complaint classification. It does not provide a production backend or shared database. Do not use real passenger personal data or passwords.
